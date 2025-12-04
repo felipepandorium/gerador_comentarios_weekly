@@ -2,6 +2,10 @@ import streamlit as st
 from openai import OpenAI
 from dotenv import load_dotenv, find_dotenv
 from streamlit_option_menu import option_menu
+import os
+
+LOGIN_USER = os.getenv("LOGIN_USER")
+LOGIN_PASS = os.getenv("LOGIN_PASS")
 
 _ = load_dotenv(find_dotenv())
 
@@ -181,7 +185,7 @@ if not st.session_state['authenticated']:
     pwd = st.text_input("Senha", type="password")
 
     if st.button("Entrar"):
-        if user == "pandorium" and pwd == "pandabot":
+        if user == LOGIN_USER and pwd == LOGIN_PASS:
             st.session_state['authenticated'] = True
             st.rerun()
         else:
