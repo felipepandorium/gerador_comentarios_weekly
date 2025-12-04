@@ -233,7 +233,7 @@ if page == "Instruções":
         )
 
 else:  # Processo
-    st.title("Processo — gerar comentários")
+    st.title("Gerador de comentários para o Weekly")
 
     col1, col2 = st.columns([1, 1])
 
