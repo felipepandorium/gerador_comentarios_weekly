@@ -215,9 +215,11 @@ if page == "Instruções":
         """
         **Existem algumas tags que podem ser utilizadas para mudar a comunicação do bot. Segue:**
 
-        1. ##MODELO_EMOJI## -> Esta tag adiciona uma comunicação mais próxima que permite a utilização de emojis para dar resultados bons. Nos ruins, ele mantém sem emoji.
+        1. MODELO_PADRAO -> Esta tag segue uma comunicação padrão, simples e profissional.
 
-        2. ##MODELO_AMPLIADO## -> Esta tag adiciona um modelo mais completo e detalhado do relatório. Segue um exemplo:
+        2. MODELO_EMOJI -> Esta tag adiciona uma comunicação mais próxima que permite a utilização de emojis para dar resultados bons. Nos ruins, ele mantém sem emoji.
+
+        3. MODELO_AMPLIADO -> Esta tag adiciona um modelo mais completo e detalhado do relatório. Segue um exemplo:
         
         - Primeiro parágrafo: CONTEXTO GERAL
         - Segundo parágrafo: CONTEXTO DA META -> falar de criativo (isso tem que ser passado no texto do contexto)
